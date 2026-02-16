@@ -2,7 +2,11 @@
 #define KAYDETME_H
 
 #include <sqlite3.h>
+#include <iostream>
+#include <string>
 
+
+class kaydetme{
 private:
 // Variable declarations
 extern sqlite3* veritabani;
@@ -14,5 +18,6 @@ void dosyaAc();
 void dosyaYazdir();
 void dosyaListele();
 int sqliteAc();  // Optional SQLite open function
+};
 
 #endif
